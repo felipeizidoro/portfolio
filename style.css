@@ -1,0 +1,59 @@
+:root {
+    --bg-color: #212529;
+    --bg-second-color: #88868694;
+    --font-color: #f1f5f9;
+}
+
+body {
+    background-color: var(--bg-color);
+    color: var(--font-color);
+    font-family: "Ubuntu", sans-serif;
+}
+
+.navbar-end {
+    padding: 1rem 1rem 0rem 1rem;
+}
+
+#themeSwitcher {
+    background-color: transparent;
+    color: var(--font-color);
+    border: none;
+    cursor: pointer;
+}
+
+#themeSwitcher:hover {
+    background-color: var(--font-color);
+    color: var(--bg-color);
+    border-radius: 0.5rem;
+    cursor: pointer;
+}
+
+.card {
+    margin-bottom: 1rem;
+}
+
+@media (max-width:768px) {
+    .image .imgSmaller{
+        width: 50%; 
+        padding-top: 1rem;
+        display: block;
+        margin: 0 auto; 
+    }
+    .centerTxt {
+        display: block;
+        text-align: center;
+    }
+    .columns .is-centered .column{
+        display: flex;
+        justify-content: center;
+    }
+    .is-9 {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    .is-9 .column {
+        text-align: center;
+    }
+}
